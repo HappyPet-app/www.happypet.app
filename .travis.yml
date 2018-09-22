@@ -6,7 +6,7 @@ script:
 
 deploy:
   - provider: releases
-    api_key: $GITHUB_TOKEN
+    api_key: $GH_TOKEN
     file_glob: true
     file: output/*
     skip_cleanup: true

@@ -5,8 +5,10 @@ script:
   - pelican content -s publishconf.py
 
 deploy:
-  - provider: releases
-    api_key: $GH_TOKEN
-    file_glob: true
-    file: output/*
-    skip_cleanup: true
+  provider: pages
+  api_key: $GH_TOKEN
+  target-branch: gh-pages
+  file_glob: true
+  file: output/*
+  skip_cleanup: true
+  repo: happypet-app/www.happypet.app

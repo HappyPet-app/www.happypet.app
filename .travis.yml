@@ -6,9 +6,8 @@ script:
 
 deploy:
   provider: pages
-  api_key: $GH_TOKEN
-  target-branch: gh-pages
-  file_glob: true
-  file: output/*
   skip_cleanup: true
-  repo: happypet-app/www.happypet.app
+  github-token: $GH_TOKEN
+  repo: HappyPet-app/www.happypet.app
+  target-branch: gh-pages
+  local-dir: output

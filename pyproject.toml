@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "www.happypet.app"
+version = "0.1.0"
+description = "HappyPet website"
+authors = ["HappyPet <cdev@happypet.app>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pelican = "^3.7"
+markdown = "^3.0"
+
+[tool.poetry.dev-dependencies]

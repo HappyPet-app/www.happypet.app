@@ -1,11 +1,6 @@
 language: python
 python: "3.6"
 
-before_install:
-  - pip install poetry
-install:
-  - poetry develop
-
 script:
   - pelican content -s publishconf.py
 

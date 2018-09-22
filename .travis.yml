@@ -1,0 +1,17 @@
+language: python
+python: "3.6"
+
+before_install:
+  - pip install poetry
+install:
+  - poetry develop
+
+script:
+  - pelican content -s publishconf.py
+
+deploy:
+  - provider: releases
+    api_key: $GITHUB_TOKEN
+    file_glob: true
+    file: output/*
+    skip_cleanup: true

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-THEME = './themes/attila'
+THEME = './themes/happypet'
 
 AUTHOR = 'HappyPet team'
 SITENAME = 'HappyPet'

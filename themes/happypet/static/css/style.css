@@ -1,3 +1,37 @@
-body{
-  background-color: #808080;
+/****** GENERAL ********/
+h1, h2, h3, h4, h5, h6{
+  color: #ffffff;
+}
+
+/****** HEADER ********/
+header{
+  background-image:linear-gradient(190deg, #81d5b7, #00a7e2);
+  height: 105vh;
+}
+header a img{
+  width: 180px;
+  position: absolute;
+  margin-top:35px;
+  margin-left:40px;
+}
+header h1{
+  font-size: 3.2em;
+}
+#annonce{
+  margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+}
+
+/***** HEADER MENU *******/
+menu {
+  background-color: #ffff00;
+  margin-top: 0px;
+}
+menu ul{
+  display: inline-block;
+}
+menu ul li{
+  display: inline;
+	list-style: none; /* pour enlever les puces sur IE7 */
+	margin: 10px;
 }

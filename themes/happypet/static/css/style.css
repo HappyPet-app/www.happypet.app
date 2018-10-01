@@ -8,12 +8,7 @@ header{
   background-image:linear-gradient(190deg, #81d5b7, #00a7e2);
   height: 105vh;
 }
-header a img{
-  width: 180px;
-  position: absolute;
-  margin-top:35px;
-  margin-left:40px;
-}
+
 header h1{
   font-size: 3.2em;
 }
@@ -21,17 +16,41 @@ header h1{
   margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
   transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
 }
+#img-front{
+  max-width:100%;
+  max-height:100%;
+  margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%);
+}
 
 /***** HEADER MENU *******/
 menu {
-  background-color: #ffff00;
+
   margin-top: 0px;
+  position: absolute;
+  width: 100%;
+}
+menu a img{
+  height: 50px;
+  margin: 10px 0;
+  float: left;
 }
 menu ul{
   display: inline-block;
+  float: right;
+  margin-right: 25px;
+  margin-bottom: 0px;
+  height: 70px;
+  line-height: 70px; /* same as height! */
 }
 menu ul li{
   display: inline;
 	list-style: none; /* pour enlever les puces sur IE7 */
 	margin: 10px;
+}
+menu ul li a{
+  color: white;
+}
+menu ul li a:hover{
+  color: white;
 }

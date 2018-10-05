@@ -11,3 +11,6 @@ deploy:
   repo: HappyPet-app/www.happypet.app
   target-branch: gh-pages
   local-dir: output
+  fqdn: happypet.app
+  on:
+    branch: master

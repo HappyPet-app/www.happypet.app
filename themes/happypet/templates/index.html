@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
 <head>
+  <link href='//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900,300italic,400italic,700italic|Karla:100,200,300,400,500,600,700,800,900,300italic,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <meta http-equiv= "content-type" content= "text/html; charset=UTF-8" >
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
   <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/bootstrap.min.js"></script>
   <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css" type="text/css" rel="stylesheet" />
+  <link rel="shortcut icon" type="image/png" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/favicon.png"/>
   <title>HappyPet.app, l'application mobile</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(function() {
+      var header = $(".menu");
+      $(window).scroll(function() {
+          var scroll = $(window).scrollTop();
+
+          if (scroll >= 100) {
+              header.removeClass('menu-top').addClass("menu-scroll");
+              $("#logo").attr("src","{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/test.png");
+          } else {
+              header.removeClass("menu-scroll").addClass('menu-top');
+              $("#logo").attr("src","{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/happypet.svg");
+          }
+      });
+    });
+  </script>
 </head>
 <body>
   <header>
-    <menu>
-      <a href="https://happypet.app"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/happypet.svg"></img></a>
+    <menu class="menu menu-top">
+      <a href="https://happypet.app"><img id="logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/happypet.svg"></img></a>
       <ul>
         <li><a href="#">test</a></li>
         <li><a href="#">test2</a></li>
@@ -21,16 +40,31 @@
     </menu>
     <div class="container" style="float:both;">
         <div class="row">
-          <div class="col-md-6" id="annonce">
-            <h1>HappyPet.app ! Pour ceux qui aiment les animaux</h1>
-            <h2>Application qui lie les propriétaire d'animaux
-            et ceux qui souhaitent s'en occuper</h2>
+          <div class="col-md-7 col-sm-12" id="annonce">
+            <h1>Burn calories <br>
+                & track your results <br>
+                anytime </h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec nisl ut nulla egestas lobortis nulla. </h2>
+            <div style="width:100%; background-color:#ff0f0f;">
+                <div style="width:150px; height:50px; background-color:#000; text-align:center; color:#fff; line-height:50px; border-radius: 5px; float:left;">Get on Apple</div>
+                <div style="margin-left: 20px; width:150px; height:50px; background-color:#000; text-align:center; color:#fff; line-height:50px; border-radius: 5px; float: left;">Get on Android</div>
+            </div>
           </div>
-        <div class="col-md-4 offset-md-1" id="img-front">
-            <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/chat_front.png">
+        </div>
+        <div class="row">
+          <div style="background-color:#fff; width: 86%; margin: 0 8%; height: 200px; z-index: 9999;">
           </div>
         </div>
     </div>
   </header>
+  <div class="container" style="float:both;">
+      <div class="row">
+        <div class="col-md-12">
+
+        </div>
+      </div>
+  </div>
+
+  <div style="height:600px; width:100%; background-color:#505050;"> </div>
 </body>
 </html>

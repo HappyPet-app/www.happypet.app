@@ -3,10 +3,28 @@ h1, h2, h3, h4, h5, h6{
   color: #ffffff;
 }
 /****** HEADER ********/
+/*
 header{
   background-image:linear-gradient(190deg, #81d5b7, #00a7e2);
   height: 97vh;
-}
+} */
+
+header video#bgvid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(calc(-50% - 5vh));
+    -moz-transform: translateX(-50%) translateY(calc(-50% - 5vh));
+    -webkit-transform: translateX(-50%) translateY(calc(-50% - 5vh));
+    transform: translateX(-50%) translateY(calc(-50% - 5vh));
+    background-image:linear-gradient(190deg, #81d5b7, #00a7e2);
+
+  }
 
 header h1{
   font-size: 3.2em;
@@ -78,10 +96,10 @@ display: none;
 
 menu ul li a:hover .underline{
   display: block;
-  -webkit-animation: fadeInFromNone 0.8s ease-out;
-  -moz-animation: fadeInFromNone 0.8s ease-out;
-  -o-animation: fadeInFromNone 0.8s ease-out;
-  animation: fadeInFromNone 0.8s ease-out;
+  -webkit-animation: fadeInFromNone 1s ease-out;
+  -moz-animation: fadeInFromNone 1s ease-out;
+  -o-animation: fadeInFromNone 1s ease-out;
+  animation: fadeInFromNone 1s ease-out;
 }
 @-webkit-keyframes fadeInFromNone {
   0% { display: none; opacity: 0; }
@@ -104,12 +122,6 @@ menu ul li a:hover .underline{
   100% { display: block; opacity: 1;}
 }
 
-menu{
-  display: block;
-}
-
-
-
 .menu-scroll{
   background-color: #ffffff;
   position: fixed;
@@ -117,7 +129,71 @@ menu{
   margin-top: 0;
   color:#000000;
   z-index: 9999;
+  display: none;
 }
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+ }
+ @-webkit-keyframes slideInDown {
+ 0% {
+ -webkit-transform: translateY(-100%);
+ transform: translateY(-100%);
+ visibility: visible;
+ }
+ 100%  {
+ -webkit-transform: translateY(0);
+ transform: translateY(0);
+ }
+ }
+ @keyframes slideInDown {
+ 0% {
+ -webkit-transform: translateY(-100%);
+ transform: translateY(-100%);
+ visibility: visible;
+ }
+ 100% {
+ -webkit-transform: translateY(0);
+ transform: translateY(0);
+ }
+ }
+
+.slideOutUp {
+  -webkit-animation-name: slideOutUp;
+  animation-name: slideOutUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideOutUp {
+  0% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  }
+  100% {
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  }
+  }
+  @keyframes slideOutUp {
+  0% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  }
+  100% {
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  }
+  }
+
 .menu-scroll ul li a{
   color: black;
 }
@@ -172,7 +248,8 @@ menu{
 
 #publicity{
   width: 1085px;
-  margin: -113px auto 0;
+  margin: calc(-113px + -3vh) auto 0;
   height: 227px;
   object-fit: contain;
+  z-index: 888;
 }

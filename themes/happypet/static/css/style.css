@@ -248,8 +248,19 @@ menu ul li a:hover .underline{
 
 #publicity{
   width: 1085px;
-  margin: calc(-113px + -3vh) auto 0;
   height: 227px;
   object-fit: contain;
   z-index: 888;
+}
+
+
+
+/******* RESPONSIVE ********/
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url(polina.jpg) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
 }

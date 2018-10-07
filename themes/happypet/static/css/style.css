@@ -11,44 +11,105 @@ header{
 header h1{
   font-size: 3.2em;
 }
-#annonce{
-  margin-top: 45vh; /* poussé de la moitié de hauteur de viewport */
-  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
-}
 
 /***** HEADER MENU *******/
 menu a img{
   height: 50px;
-  margin: 10px 0;
+  margin: 20px 0 0;
   float: left;
 }
 menu ul{
   display: inline-block;
   float: right;
+  margin-top:5px;
   margin-right: 25px;
   margin-bottom: 0px;
   height: 70px;
   line-height: 70px; /* same as height! */
   font-family: "Karla", sans-serif;
-  font-size: 16px;
   font-weight: 400;
 }
+
 menu ul li{
-  display: inline;
-	list-style: none; /* pour enlever les puces sur IE7 */
-	margin: 10px;
+  display: inline-block;
+  float: left;
+  padding: 0;
+  margin: 0 15px;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 .menu-top {
   margin-top: 0px;
   position: absolute;
   width: 100%;
 }
-.menu-top ul li a{
-  color: white;
+.menu-scoll{
+  height: 0px;
 }
+
+.menu-scroll ul{
+  margin-top: 0px;
+}
+
+menu ul li a{
+  color: white;
+  font-family: 'Karla',sans-serif;
+font-size: 1.2em;
+font-style: normal;
+font-weight: 700;
+letter-spacing: -1px;
+text-transform: capitalize;
+position: relative;
+padding: 0
+}
+
+menu ul li a .underline{
+width: 100%;
+height: 1px;
+background-color:#fff;
+margin-top:-28px;
+display: none;
+}
+
 .menu-top ul li a:hover{
   color: white;
+  text-decoration: none;
 }
+
+menu ul li a:hover .underline{
+  display: block;
+  -webkit-animation: fadeInFromNone 0.8s ease-out;
+  -moz-animation: fadeInFromNone 0.8s ease-out;
+  -o-animation: fadeInFromNone 0.8s ease-out;
+  animation: fadeInFromNone 0.8s ease-out;
+}
+@-webkit-keyframes fadeInFromNone {
+  0% { display: none; opacity: 0; }
+  1% { display: block; opacity: 0;}
+  100% { display: block; opacity: 1;}
+}
+@-moz-keyframes fadeInFromNone {
+  0% { display: none; opacity: 0; }
+  1% { display: block; opacity: 0;}
+  100% { display: block; opacity: 1;}
+}
+@-o-keyframes fadeInFromNone {
+  0% { display: none; opacity: 0; }
+  1% { display: block; opacity: 0;}
+  100% { display: block; opacity: 1;}
+}
+@keyframes fadeInFromNone {
+  0% { display: none; opacity: 0; }
+  1% { display: block; opacity: 0;}
+  100% { display: block; opacity: 1;}
+}
+
+menu{
+  display: block;
+}
+
+
+
 .menu-scroll{
   background-color: #ffffff;
   position: fixed;
@@ -62,21 +123,56 @@ menu ul li{
 }
 .menu-scroll ul li a:hover{
   color: black;
+  text-decoration: none;
+}
+
+.menu-scroll a img{
+  height: 40px;
+  margin: 15px 0;
+  float: left;
+}
+
+.menu-scroll ul li a .underline{
+  background-color: #000;
 }
 
 /******** Header text *********/
+#annonce{
+  margin-top: 45vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+  padding: 0 18px;
+}
 
+.dwn-button{
+  width:158px;
+  height:48px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  float: left;"
+}
+
+.dwn-button:nth-child(2){
+  margin-left:10px;
+}
 #annonce h1{
   font-family: "Karla";
-  font-size: 62px;
+  font-size: 3.9em;
   font-weight: 700;
   letter-spacing: -2px;
-  line-height: 57px;
+  line-height: 68px;
 }
 #annonce h2{
   font-family: "karla";
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 400;
   letter-spacing: 0px;
   line-height: 28px;
+  padding: 17px 0;
+}
+
+#publicity{
+  width: 1085px;
+  margin: -113px auto 0;
+  height: 227px;
+  object-fit: contain;
 }

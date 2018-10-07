@@ -18,7 +18,7 @@
 
           if (scroll >= 100) {
               header.removeClass('menu-top').addClass("menu-scroll");
-              $("#logo").attr("src","{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/test.png");
+              $("#logo").attr("src","{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/happypet_color.svg");
           } else {
               header.removeClass("menu-scroll").addClass('menu-top');
               $("#logo").attr("src","{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/happypet.svg");
@@ -32,39 +32,57 @@
     <menu class="menu menu-top">
       <a href="https://happypet.app"><img id="logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/happypet.svg"></img></a>
       <ul>
-        <li><a href="#">test</a></li>
-        <li><a href="#">test2</a></li>
-        <li><a href="#">test3</a></li>
-        <li><a href="#">test4</a></li>
+        <li>
+          <a href="#">
+            <span>Home</span>
+            <div class="underline"></div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>About</span>
+            <div class="underline"></div>
+          </a>
+        </li>
+        <li>
+          <a href="#" >
+            <span>Why us</span>
+            <div class="underline"></div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>Contact</span>
+            <div class="underline"></div>
+          </a>
+        </li>
       </ul>
     </menu>
     <div class="container" style="float:both;">
         <div class="row">
-          <div class="col-md-7 col-sm-12" id="annonce">
-            <h1>Burn calories <br>
-                & track your results <br>
-                anytime </h1>
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec nisl ut nulla egestas lobortis nulla. </h2>
+          <div class="col-md-8 col-sm-12" id="annonce">
+            <h1>HappyPet, l'app <br>
+                qui révolutionne<br>
+                le petsitting </h1>
+            <h2>Trouvez le petsitter idéal et construisez une relation de confiance en partageant des moments incroyables ! En bref, suivez les aventures de votre animal comme si vous y étiez.</h2>
             <div style="width:100%; background-color:#ff0f0f;">
-                <div style="width:150px; height:50px; background-color:#000; text-align:center; color:#fff; line-height:50px; border-radius: 5px; float:left;">Get on Apple</div>
-                <div style="margin-left: 20px; width:150px; height:50px; background-color:#000; text-align:center; color:#fff; line-height:50px; border-radius: 5px; float: left;">Get on Android</div>
+                <a href="" style="background-image:url({{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/dwn_apple.svg)" class="dwn-button"></a>
+                <a href="" style="background-image:url({{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/dwn_ggplay.svg)" class="dwn-button"></a>
+            </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div style="background-color:#fff; width: 86%; margin: 0 8%; height: 200px; z-index: 9999;">
-          </div>
+
         </div>
     </div>
   </header>
   <div class="container" style="float:both;">
       <div class="row">
-        <div class="col-md-12">
-
-        </div>
+          <div id="publicity" style="background-image:url({{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/pub.jpg)">
+          </div>
       </div>
   </div>
-
-  <div style="height:600px; width:100%; background-color:#505050;"> </div>
+  <div style="width:100%; height: 600px;"></div>
 </body>
 </html>

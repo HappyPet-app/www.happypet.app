@@ -27,7 +27,7 @@
   </script>
 </head>
 <body>
-  <header>
+  <header style="min-height:100vh">
     <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
       <source src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/videos/small.webm" type="video/webm">
       <source src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/videos/small.mp4" type="video/mp4">
@@ -50,7 +50,7 @@
         <li><a href="#"><span>Contact</span><div class="underline"></div></a></li>
       </ul>
     </menu>
-    <div class="container" style="float:both;">
+    <div class="container" style="clear: both;">
         <div class="row">
           <div class="col-md-8 col-sm-12" id="annonce">
             <h1>HappyPet, l'app <br>
@@ -61,21 +61,16 @@
                 <a href="" style="background-image:url({{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/dwn_apple.svg)" class="dwn-button"></a>
                 <a href="" style="background-image:url({{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/dwn_ggplay.svg)" class="dwn-button"></a>
             </div>
-            </div>
           </div>
         </div>
     </div>
-    <div class="container" style="float:both;">
-        <div class="row">
-            <div id="publicity" style="background-image:url({{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/pub.jpg)">
-            </div>
-        </div>
-    </div>
   </header>
-
-  <div class="container" style="float:both;">
+  <div id="publicity" style="background-image:url({{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/pub.jpg); margin: -152px auto 0">
+  </div>
+  <div class="container">
       <div class="row">
           <p>test</p>
+
       </div>
   </div>
 </body>

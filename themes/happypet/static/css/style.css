@@ -160,6 +160,7 @@ menu{
   font-weight: 700;
   letter-spacing: -2px;
   line-height: 68px;
+  padding-right: 30%;
 }
 #annonce h2{
   font-family: "karla";
@@ -169,10 +170,36 @@ menu{
   line-height: 28px;
   padding: 17px 0;
 }
-
 #publicity{
-  width: 1085px;
-  margin: -113px auto 0;
-  height: 227px;
-  object-fit: contain;
+  padding-top: 17.5%;
+  transform:translateY(-50%);
+  background-size: contain;
+}
+
+/******* SM *********/
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+#publicity{
+  padding-top: 17.7%;
+  transform:translateY(0%);
+}
+#annonce h1{
+  padding-right: 20%;
+}
+}
+
+/******* XS *********/
+
+@media screen and (max-width: 767px) {
+  #annonce h1{
+    font-size: 2.5em;
+    line-height: 44px;
+    margin-top: 15%;
+    padding-right: 10%;
+
+  }
+  #publicity{
+    padding-top: 21.2%;
+    transform:translateY(0%);
+  }
 }

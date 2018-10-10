@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>HappyPet - misc</title><link href="https://happypet.app/" rel="alternate"></link><link href="https://happypet.app/feeds/misc.atom.xml" rel="self"></link><id>https://happypet.app/</id><updated>2048-12-01T10:02:00+01:00</updated><entry><title>The first article</title><link href="https://happypet.app/the-first-article.html" rel="alternate"></link><published>2048-12-01T10:02:00+01:00</published><updated>2048-12-01T10:02:00+01:00</updated><author><name>HappyPet team</name></author><id>tag:happypet.app,2048-12-01:/the-first-article.html</id><summary type="html">&lt;p&gt;Woaw &lt;strong&gt;le&lt;/strong&gt; premier &lt;em&gt;article&lt;/em&gt;.
+Dingue ou pas?!&lt;/p&gt;</summary><content type="html">&lt;p&gt;Woaw &lt;strong&gt;le&lt;/strong&gt; premier &lt;em&gt;article&lt;/em&gt;.
+Dingue ou pas?!&lt;/p&gt;</content></entry></feed>

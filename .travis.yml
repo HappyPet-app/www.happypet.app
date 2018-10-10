@@ -1,0 +1,16 @@
+language: python
+python: "3.6"
+
+script:
+  - pelican content -s publishconf.py
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github-token: $GH_TOKEN
+  repo: HappyPet-app/www.happypet.app
+  target-branch: gh-pages
+  local-dir: output
+  fqdn: happypet.app
+  on:
+    branch: master
